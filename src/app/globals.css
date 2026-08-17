@@ -3,25 +3,130 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: #0f110a;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-ink text-cream font-sans antialiased;
+  overscroll-behavior-y: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+::selection {
+  background: #a8ab6e;
+  color: #0f110a;
+}
+
+/* Lenis smooth-scroll plumbing */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Oversized editorial headings */
+.display-hero {
+  font-size: clamp(2.6rem, 10vw, 9rem);
+  line-height: 1.02;
+}
+.display-xl {
+  font-size: clamp(2.2rem, 6.5vw, 5.5rem);
+  line-height: 1.05;
+}
+
+/* Small-caps label used throughout */
+.eyebrow {
+  @apply font-sans text-[0.7rem] uppercase text-brass;
+  letter-spacing: 0.35em;
+}
+
+/* Film-grain overlay (pure CSS data-URI, no network request) */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Cut-out dishes: the studio grade is baked into the files, so the only
+   render-time effect is the soft shadow that makes plates float. */
+.dish-cutout {
+  filter: drop-shadow(0 28px 32px rgba(0, 0, 0, 0.6));
+}
+
+/* Room photographs: soft edge + inner shadow so the frame melts into the page */
+.photo-soft::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow:
+    inset 0 0 60px rgba(15, 17, 10, 0.55),
+    inset 0 0 0 1px rgba(236, 231, 216, 0.07);
+}
+
+/* Glossy glass display text — gradient clipped to the glyphs with a hard
+   "gloss line" mid-way, like light hitting curved glass */
+.glass-text {
+  background-image: linear-gradient(
+    177deg,
+    #ffffff 0%,
+    #f2f4ea 34%,
+    #b9bfa4 49%,
+    #e7ebdb 55%,
+    #fbfcf7 78%,
+    #d7dcc4 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 3px 12px rgba(0, 0, 0, 0.45));
+}
+.glass-text-olive {
+  background-image: linear-gradient(
+    177deg,
+    #eef2d6 0%,
+    #cdd694 36%,
+    #7d854a 49%,
+    #c3cc88 55%,
+    #e9eecb 80%,
+    #a9b171 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Scroll-down indicator */
+@keyframes scroll-hint {
+  0% { transform: translateY(0); opacity: 1; }
+  70% { transform: translateY(12px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+.scroll-hint-dot {
+  animation: scroll-hint 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Reduced motion: kill CSS animations; JS animations are gated per-component */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

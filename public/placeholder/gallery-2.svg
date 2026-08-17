@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <radialGradient id="g" cx="35%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#221c14"/>
+      <stop offset="100%" stop-color="#0f0e0c"/>
+    </radialGradient>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer><feComposite operator="over" in2="SourceGraphic"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect width="1200" height="900" filter="url(#n)" opacity="0.5"/>
+  <circle cx="816.0000000000001" cy="378" r="198" fill="none" stroke="#9c7a4a" stroke-opacity="0.35" stroke-width="1.5"/>
+  <circle cx="816.0000000000001" cy="378" r="144" fill="#221c14" fill-opacity="0.9" stroke="#9c7a4a" stroke-opacity="0.2"/>
+  <text x="600" y="872" text-anchor="middle" font-family="Georgia, serif" font-size="15" letter-spacing="4" fill="#9c7a4a" fill-opacity="0.65">FRESH PASTA</text>
+</svg>

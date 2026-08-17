@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Piccolino Italian Kitchen — Website
 
-## Getting Started
+Dark, cinematic single-page site for the family restaurant in Toms River, NJ.
+Built with **Next.js 14 (App Router) · Tailwind CSS · GSAP + ScrollTrigger · Framer Motion · Lenis**.
 
-First, run the development server:
+## Run it locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎥 Add your hero video
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Drop your food footage at:
 
-## Learn More
+```
+public/video/hero.mp4
+```
 
-To learn more about Next.js, take a look at the following resources:
+That's the only step — the hero picks it up automatically. Export tips are in
+`public/video/DROP-YOUR-HERO-VIDEO-HERE.md` (short version: 1080p H.264, no
+audio, 10–20s loop, under ~15 MB).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✏️ Everyday edits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| What | Where |
+|---|---|
+| Menu items & prices | `src/data/menu.json` |
+| Hours, phone, address, socials | `src/data/site.ts` |
+| Photos | swap files in `public/placeholder/` (or point components at new paths) |
+| Story text | `src/components/About.tsx` |
 
-## Deploy on Vercel
+> ⚠️ The phone number in `src/data/site.ts` is a placeholder — put the real one in before launch.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deploy to Vercel (GitHub → Vercel)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Push to GitHub**
+
+   ```bash
+   cd piccolino-site
+   git add -A
+   git commit -m "Piccolino site"
+   ```
+
+   Create a repo on GitHub (https://github.com/new, name it `piccolino-site`,
+   keep it private if you want), then:
+
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/piccolino-site.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+   (Or with the GitHub CLI: `gh repo create piccolino-site --private --source=. --push`)
+
+2. **Import into Vercel**
+   - Go to https://vercel.com/new and sign in **with GitHub**
+   - Click **Import** next to `piccolino-site`
+   - Vercel auto-detects Next.js — don't change any settings
+   - Click **Deploy**
+
+3. **Done.** You get a live `piccolino-site.vercel.app` URL. Every `git push`
+   to `main` redeploys automatically.
+
+4. **Custom domain (optional):** In the Vercel project → **Settings → Domains**,
+   add e.g. `piccolinotomsriver.com` and follow the DNS instructions Vercel shows
+   (usually one A record + one CNAME at your domain registrar).
+
+## Notes
+
+- Smooth scrolling (Lenis) and all scroll animations are automatically disabled
+  for visitors with "reduce motion" enabled.
+- Animations use transform/opacity only, so everything stays at 60fps.
+- The contact form is UI-only for now — it doesn't send anywhere yet. Easy
+  upgrades later: [Formspree](https://formspree.io), [Resend](https://resend.com),
+  or a Next.js API route.
