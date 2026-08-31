@@ -8,9 +8,9 @@ const photos = [
   { src: "/photos/cutouts/burrata-della-nonna.webp", alt: "Burrata Della Nonna — fresh burrata over crispy eggplant with roasted red peppers and balsamic", caption: "Burrata della Nonna", sub: "Antipasti", w: "w-[72vw] md:w-[34vw]" },
   { src: "/photos/cutouts/steak-shrimp-scampi.webp", alt: "NY strip steak topped with shrimp scampi, linguine aglio e olio, and broccoli rabe", caption: "Steak & Shrimp Scampi", sub: "Secondi", w: "w-[82vw] md:w-[40vw]" },
   { src: "/photos/cutouts/caprese.webp", alt: "Caprese salad — sliced tomato, fresh mozzarella, basil and balsamic glaze", caption: "Caprese", sub: "Insalate", w: "w-[72vw] md:w-[34vw]" },
+  { src: "/photos/cutouts/carbonara.webp", alt: "Carbonara — spaghetti with pancetta, sweet peas and cream", caption: "Carbonara", sub: "Paste", w: "w-[72vw] md:w-[34vw]" },
+  { src: "/photos/cutouts/lasagna.webp", alt: "Lasagna layered with ricotta and quattro formaggi, tomato and cream", caption: "Lasagna", sub: "Paste", w: "w-[82vw] md:w-[40vw]" },
   { src: "/photos/cutouts/tripe-marinara.webp", alt: "Tripe marinara simmered in tomato sauce with fresh herbs", caption: "Tripe Marinara", sub: "Della Casa", w: "w-[82vw] md:w-[40vw]" },
-  { src: "/photos/cutouts/shrimp-crostini.webp", alt: "Shrimp crostini with tomato, garlic, and basil", caption: "Shrimp Crostini", sub: "Lunch", w: "w-[72vw] md:w-[34vw]" },
-  { src: "/photos/cutouts/cioppino.webp", alt: "Cioppino — calamari, mussels, and clams in tomato broth", caption: "Cioppino", sub: "Frutti di Mare", w: "w-[82vw] md:w-[40vw]" },
   { src: "/photos/cutouts/eggplant-della-nonna.webp", alt: "Eggplant Della Nonna — breaded eggplant layered with fresh mozzarella, roasted red peppers and herbs over greens", caption: "Eggplant Della Nonna", sub: "Antipasti", w: "w-[82vw] md:w-[40vw]" },
 ];
 

@@ -88,9 +88,9 @@ export default function About() {
         </p>
         <p className="mt-5 max-w-md leading-relaxed text-stone">
           It&rsquo;s a cozy little spot — the kind of place where the sauce
-          simmers all morning, the bread hits the table warm, and somebody
-          always asks how your mother is doing. Come for lunch, come back for
-          dinner, stay like family.
+          simmers all morning, the bread and oil hit the table before you ask,
+          and somebody always wants to know how your mother is doing. Come for
+          lunch, come back for dinner, stay like family.
         </p>
         <p className="mt-10 font-display text-2xl italic text-cream/80">
           &ldquo;Mangia, mangia.&rdquo;

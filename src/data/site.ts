@@ -8,6 +8,25 @@ export const site = {
   phone: "(732) 270-2020",
   phoneHref: "tel:+17322702020",
 
+  // Toast online ordering — commission-free, goes straight to the restaurant.
+  // This is the PRIMARY order link everywhere on the site.
+  // ⚠️ Click this once to confirm it's the right store page before launch.
+  orderUrl:
+    "https://order.toasttab.com/online/piccolino-italian-kitchen-llc-1177-fischer-blvd-suite-2",
+
+  // Third-party delivery — deliberately secondary: these charge commission,
+  // so the site always points at Toast first.
+  delivery: [
+    {
+      name: "DoorDash",
+      href: "https://www.doordash.com/store/piccolino-italian-kitchen-toms-river-24665820/",
+    },
+    {
+      name: "Uber Eats",
+      href: "https://www.ubereats.com/store/piccolino-italian-kitchen-llc/PWLrdRLKTjuSmBuMu6BRDg",
+    },
+  ],
+
   address: {
     street: "1177 Fischer Blvd",
     city: "Toms River",
@@ -28,10 +47,12 @@ export const site = {
     { days: "Sunday", label: "Closed", time: "—" },
   ],
 
-  // TODO: replace with real profile URLs
   socials: [
-    { name: "Instagram", href: "https://instagram.com" },
-    { name: "Facebook", href: "https://facebook.com" },
-    { name: "Yelp", href: "https://yelp.com" },
+    { name: "Instagram", href: "https://www.instagram.com/piccolinoitaliankitchen/" },
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/p/Piccolino-Italian-Kitchen-100087486537906/",
+    },
+    { name: "TikTok", href: "https://www.tiktok.com/@piccolinoitaliankitchen" },
   ],
 };

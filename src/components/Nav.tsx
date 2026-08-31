@@ -8,6 +8,7 @@ const links = [
   { href: "#menu", label: "Menu" },
   { href: "#gallery", label: "Gallery" },
   { href: "#room", label: "The Place" },
+  { href: "#catering", label: "Catering" },
   { href: "#reservations", label: "Visit" },
 ];
 
@@ -42,12 +43,22 @@ export default function Nav() {
             </a>
           ))}
         </div>
-        <a
-          href={site.phoneHref}
-          className="border border-brass/50 px-4 py-2 font-sans text-xs uppercase tracking-[0.22em] text-cream transition-colors duration-300 hover:bg-brass hover:text-ink"
-        >
-          Call us
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href={site.phoneHref}
+            className="hidden border border-cream/25 px-4 py-2 font-sans text-xs uppercase tracking-[0.22em] text-cream/80 transition-colors duration-300 hover:border-cream/50 hover:text-cream sm:inline-block"
+          >
+            Call
+          </a>
+          <a
+            href={site.orderUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-brass px-5 py-2.5 font-sans text-xs uppercase tracking-[0.22em] text-ink transition-colors duration-300 hover:bg-cream"
+          >
+            Order Online
+          </a>
+        </div>
       </nav>
     </header>
   );

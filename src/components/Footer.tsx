@@ -19,6 +19,16 @@ export default function Footer() {
             <a href={site.phoneHref} className="mt-2 inline-block text-sm text-stone transition-colors hover:text-cream">
               {site.phone}
             </a>
+            <div className="mt-6">
+              <a
+                href={site.orderUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-brass px-6 py-3 font-sans text-xs uppercase tracking-[0.22em] text-ink transition-colors duration-300 hover:bg-cream"
+              >
+                Order Online
+              </a>
+            </div>
           </div>
 
           <div>
@@ -33,15 +43,32 @@ export default function Footer() {
           <div>
             <p className="eyebrow mb-4">Follow</p>
             <div className="flex flex-col gap-2">
-              {site.socials.map((s) => (
+              {site.socials
+                .filter((s) => s.href)
+                .map((s) => (
+                  <a
+                    key={s.name}
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-stone transition-colors hover:text-brass"
+                  >
+                    {s.name}
+                  </a>
+                ))}
+            </div>
+
+            <p className="eyebrow mb-4 mt-8">Also on</p>
+            <div className="flex flex-col gap-2">
+              {site.delivery.map((d) => (
                 <a
-                  key={s.name}
-                  href={s.href}
+                  key={d.name}
+                  href={d.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-stone transition-colors hover:text-brass"
                 >
-                  {s.name}
+                  {d.name}
                 </a>
               ))}
             </div>

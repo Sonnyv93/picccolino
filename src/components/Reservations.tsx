@@ -3,6 +3,7 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap, MOTION_OK } from "@/lib/gsap";
 import Magnetic from "@/components/Magnetic";
+import OrderQR from "@/components/OrderQR";
 import { site } from "@/data/site";
 
 export default function Reservations() {
@@ -50,6 +51,43 @@ export default function Reservations() {
                 <span className="text-stone">{h.time}</span>
               </div>
             ))}
+          </div>
+
+          <div className="resv-reveal">
+            <h3 className="eyebrow mb-5">Order takeout</h3>
+            <Magnetic>
+              <a
+                href={site.orderUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-brass px-8 py-4 font-sans text-sm uppercase tracking-[0.25em] text-ink transition-colors duration-300 hover:bg-cream"
+              >
+                Order on Toast
+              </a>
+            </Magnetic>
+            <p className="mt-3 text-sm text-stone">
+              Ordered direct — no third-party fees.
+            </p>
+            <OrderQR className="mt-8" />
+
+            {/* Delivery apps, kept visibly secondary to Toast */}
+            <p className="mt-8 text-sm text-stone">
+              Prefer delivery?{" "}
+              {site.delivery.map((d, i) => (
+                <span key={d.name}>
+                  {i > 0 && " or "}
+                  <a
+                    href={d.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cream underline decoration-cream/30 underline-offset-4 transition-colors hover:text-brass"
+                  >
+                    {d.name}
+                  </a>
+                </span>
+              ))}
+              .
+            </p>
           </div>
 
           <div className="resv-reveal">

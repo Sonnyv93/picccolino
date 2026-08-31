@@ -1,0 +1,100 @@
+{
+  "updated": "March 2026",
+  "note": "We pride ourselves on customer service — please don't hesitate to ask for any special accommodations.",
+  "trayNote": "Half tray serves 10–15 · Full tray serves 20–25",
+  "packages": [
+    {
+      "price": "50",
+      "name": "The Classic",
+      "courses": [
+        { "title": "Salad Course", "choice": "Choice of", "items": "Caesar Salad · House Salad" },
+        { "title": "Family Style Appetizers", "choice": "Choice of two", "items": "Arancini · Meatballs · Fried Calamari · Eggplant Rollentini · Mussels Marinara · Stuffed Mushrooms · Mozzarella Caprese · Bruschetta with Fresh Mozzarella · Broccoli Rabe and Sausage" },
+        { "title": "Entrée Course", "choice": "Choice of three", "items": "Chicken Parmesan · Chicken Francaise · Chicken Marsala · Chicken Savoy · Chicken Giambotta · Eggplant Parmesan · Wild Caught Salmon · Shrimp Oreganatta — served with mixed vegetable" }
+      ],
+      "included": "Soda included"
+    },
+    {
+      "price": "54",
+      "name": "With Pasta",
+      "courses": [
+        { "title": "Salad Course", "choice": "Choice of", "items": "Caesar Salad · House Salad" },
+        { "title": "Family Style Appetizers", "choice": "Choice of two", "items": "Arancini · Meatballs · Fried Calamari · Eggplant Rollentini · Mussels Marinara · Stuffed Mushrooms · Mozzarella Caprese · Bruschetta with Fresh Mozzarella · Broccoli Rabe and Sausage" },
+        { "title": "Pasta Course", "choice": "Choice of one", "items": "Pomodoro · Pesto · Vodka" },
+        { "title": "Entrée Course", "choice": "Choice of three", "items": "Chicken Parmesan · Chicken Francaise · Chicken Marsala · Chicken Savoy · Chicken Giambotta · Eggplant Parmesan · Wild Caught Salmon · Shrimp Oreganatta — served with mixed vegetable" }
+      ],
+      "included": "Soda included"
+    },
+    {
+      "price": "58",
+      "name": "The Full Table",
+      "featured": true,
+      "courses": [
+        { "title": "Salad Course", "choice": "Choice of", "items": "Caesar Salad · House Salad" },
+        { "title": "Family Style Appetizers", "choice": "Choice of three", "items": "Arancini · Meatballs · Fried Calamari · Eggplant Rollentini · Mussels Marinara · Stuffed Mushrooms · Mozzarella Caprese · Bruschetta with Fresh Mozzarella · Broccoli Rabe and Sausage" },
+        { "title": "Pasta Course", "choice": "Choice of one", "items": "Pomodoro · Pesto · Vodka" },
+        { "title": "Entrée Course", "choice": "Choice of three", "items": "Chicken Parmesan · Chicken Francaise · Chicken Marsala · Chicken Savoy · Chicken Giambotta · Eggplant Parmesan · Wild Caught Salmon · Shrimp Oreganatta — served with mixed vegetable" },
+        { "title": "Dessert & Coffee", "choice": "", "items": "Included" }
+      ],
+      "included": "Soda included"
+    }
+  ],
+  "trays": [
+    {
+      "name": "Appetizers",
+      "items": [
+        { "name": "Mini Arancini", "note": "min 12 pieces · meat / cheese", "price": "3.95 / 2.95 ea" },
+        { "name": "Meatballs", "note": "min 12 pieces", "price": "3.95 ea" },
+        { "name": "Stuffed Mushrooms", "note": "min 12 pieces", "price": "3.50 ea" },
+        { "name": "Eggplant Della Nonna", "note": "min 6", "price": "8.00 ea" },
+        { "name": "Bruschetta with Crostini", "half": "30", "full": "60" },
+        { "name": "Eggplant Rollentini", "half": "65", "full": "130" },
+        { "name": "Broccoli Rabe and Sausage", "half": "60", "full": "120" },
+        { "name": "Long Hot Peppers", "note": "sautéed mushrooms, onions, roasted potatoes", "half": "45", "full": "90" }
+      ]
+    },
+    {
+      "name": "Salads",
+      "items": [
+        { "name": "House Salad", "half": "35", "full": "65" },
+        { "name": "Caesar", "half": "40", "full": "75" },
+        { "name": "Arugula Fennel", "half": "45", "full": "85" },
+        { "name": "Mozzarella Caprese", "half": "60", "full": "110" },
+        { "name": "Seafood Salad", "price": "Market" }
+      ]
+    },
+    {
+      "name": "Sides",
+      "items": [
+        { "name": "Seasonal Mixed Vegetables", "half": "45", "full": "85" },
+        { "name": "Oven Roasted Potatoes", "half": "35", "full": "70" }
+      ]
+    },
+    {
+      "name": "Pasta",
+      "items": [
+        { "name": "Penne Pomodoro", "half": "55", "full": "110" },
+        { "name": "Penne Vodka", "half": "55", "full": "110" },
+        { "name": "Rigatoni Bolognese", "half": "65", "full": "130" },
+        { "name": "Spicy Rigatoni", "half": "65", "full": "130" },
+        { "name": "Farfalle Pesto", "half": "65", "full": "130" },
+        { "name": "Cavatelli Broccoli", "half": "65", "full": "130" },
+        { "name": "Broccoli Rabe and Sausage", "half": "70", "full": "135" },
+        { "name": "Rigatoni Prosciutto Peas Cream", "half": "70", "full": "135" },
+        { "name": "Lasagna", "half": "65", "full": "130" }
+      ]
+    },
+    {
+      "name": "Entrées",
+      "items": [
+        { "name": "Chicken Parmesan", "half": "75", "full": "150" },
+        { "name": "Chicken Parmesan, Vodka Sauce", "half": "75", "full": "150" },
+        { "name": "Chicken Francaise", "half": "75", "full": "150" },
+        { "name": "Chicken Marsala", "half": "75", "full": "150" },
+        { "name": "Chicken Giambotta / Chicken Murphy", "half": "85", "full": "170" },
+        { "name": "Sausage and Peppers", "half": "75", "full": "150" },
+        { "name": "Eggplant Parmesan", "half": "65", "full": "130" },
+        { "name": "Wild Caught Salmon", "price": "Market" }
+      ]
+    }
+  ]
+}
