@@ -1,16 +1,12 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState, type FormEvent } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { gsap, MOTION_OK } from "@/lib/gsap";
 import Magnetic from "@/components/Magnetic";
 import { site } from "@/data/site";
 
-const inputClass =
-  "w-full border-b border-cream/20 bg-transparent py-3 text-cream placeholder:text-stone/60 focus:border-brass focus:outline-none transition-colors duration-300";
-
 export default function Reservations() {
   const sectionRef = useRef<HTMLElement>(null);
-  const [sent, setSent] = useState(false);
 
   useLayoutEffect(() => {
     const mm = gsap.matchMedia();
@@ -33,12 +29,6 @@ export default function Reservations() {
     });
     return () => mm.revert();
   }, []);
-
-  // UI only for now — no backend wired up yet
-  const onSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    setSent(true);
-  };
 
   return (
     <section ref={sectionRef} id="reservations" className="mx-auto max-w-6xl px-6 py-28 md:py-44">
@@ -79,59 +69,20 @@ export default function Reservations() {
             <a href={site.mapLink} target="_blank" rel="noopener noreferrer" className="text-stone transition-colors hover:text-cream">
               {site.address.street}, {site.address.city}, {site.address.state} {site.address.zip}
             </a>
-            <div className="mt-5 aspect-[4/3] overflow-hidden border border-cream/10 grayscale-[0.6] contrast-[1.05]">
-              <iframe
-                src={site.mapEmbedSrc}
-                className="h-full w-full"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Map to Piccolino Italian Kitchen"
-              />
-            </div>
           </div>
         </div>
 
-        {/* Right: contact form (UI only) */}
+        {/* Right: map */}
         <div className="resv-reveal">
-          <h3 className="eyebrow mb-8">Send us a note</h3>
-          {sent ? (
-            <div className="border border-brass/40 p-10 text-center">
-              <p className="font-display text-3xl italic text-brass">Grazie!</p>
-              <p className="mt-4 text-stone">
-                We got your note. For same-day reservations, please call{" "}
-                <a href={site.phoneHref} className="text-cream underline underline-offset-4">
-                  {site.phone}
-                </a>
-                .
-              </p>
-            </div>
-          ) : (
-            <form onSubmit={onSubmit} className="space-y-7">
-              <div className="grid grid-cols-2 gap-6">
-                <input required name="name" placeholder="Name" className={inputClass} />
-                <input required type="tel" name="phone" placeholder="Phone" className={inputClass} />
-              </div>
-              <div className="grid grid-cols-2 gap-6">
-                <input type="date" name="date" aria-label="Date" className={inputClass} />
-                <select name="party" aria-label="Party size" className={inputClass}>
-                  <option value="" className="bg-surface">Party size</option>
-                  {[2, 3, 4, 5, 6, 7, 8].map((n) => (
-                    <option key={n} value={n} className="bg-surface">{n} guests</option>
-                  ))}
-                  <option value="9+" className="bg-surface">9+ (call us)</option>
-                </select>
-              </div>
-              <textarea name="message" rows={4} placeholder="Anything we should know? Occasions, allergies, the good corner table…" className={inputClass} />
-              <Magnetic>
-                <button
-                  type="submit"
-                  className="border border-brass/50 px-10 py-4 font-sans text-sm uppercase tracking-[0.25em] text-cream transition-colors duration-300 hover:bg-brass hover:text-ink"
-                >
-                  Send
-                </button>
-              </Magnetic>
-            </form>
-          )}
+          <div className="photo-soft aspect-[4/5] overflow-hidden rounded-[28px] grayscale-[0.55] contrast-[1.05]">
+            <iframe
+              src={site.mapEmbedSrc}
+              className="h-full w-full"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Map to Piccolino Italian Kitchen"
+            />
+          </div>
         </div>
       </div>
     </section>

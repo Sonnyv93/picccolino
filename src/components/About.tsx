@@ -77,6 +77,16 @@ export default function About() {
           the ocean and down the Parkway to the Jersey Shore.
         </p>
         <p className="mt-5 max-w-md leading-relaxed text-stone">
+          Our family has been feeding this shore for{" "}
+          <span className="text-cream">more than 35 years</span>. It started
+          right here on Fischer Blvd as{" "}
+          <span className="text-cream">Rockafellas Clam Bar &amp; Grill</span>,
+          and grew into{" "}
+          <span className="text-cream">Rockafellas By The Sea</span> in Ortley
+          Beach — a summer institution for locals and down-the-shore regulars
+          alike. Piccolino is where that kitchen lives now, open all year.
+        </p>
+        <p className="mt-5 max-w-md leading-relaxed text-stone">
           It&rsquo;s a cozy little spot — the kind of place where the sauce
           simmers all morning, the bread hits the table warm, and somebody
           always asks how your mother is doing. Come for lunch, come back for

@@ -1,9 +1,9 @@
 "use client";
 
 import { useLayoutEffect, useRef } from "react";
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { gsap, MOTION_OK } from "@/lib/gsap";
-import { site } from "@/data/site";
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -30,15 +30,25 @@ export default function Hero() {
 
   return (
     <section ref={sectionRef} id="top" className="relative h-[100svh] overflow-hidden">
-      {/* ── Video background ──────────────────────────────────────────────
-          The food video lives in its own section mid-page (see Showreel.tsx) —
-          the hero stays a quiet olive field so the wordmark carries it. */}
+      {/* ── Hero backdrop ────────────────────────────────────────────────
+          The storefront at night, sitting behind the wordmark as a faint
+          watermark. The food video lives mid-page (see Showreel.tsx). */}
       <div ref={videoRef} className="absolute inset-0 -bottom-[22%]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_38%,#232a17_0%,#151a0e_45%,#0f110a_100%)]" />
+        <Image
+          src="/photos/room/storefront-night.webp"
+          alt="Piccolino Italian Kitchen storefront at night"
+          fill
+          priority
+          className="object-cover opacity-[0.72]"
+          sizes="100vw"
+        />
+        {/* feather the photo's edges into the olive field */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_42%,transparent_38%,rgba(15,17,10,0.92)_88%)]" />
       </div>
 
-      {/* Dark cinematic gradient overlay — keeps the wordmark readable */}
-      <div className="absolute inset-0 bg-gradient-to-b from-ink/40 via-transparent to-ink" />
+      {/* Dark scrim — just enough to keep the wordmark readable over the sign */}
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/35 via-ink/45 to-ink" />
 
       {/* Title */}
       <div className="relative z-20 flex h-full flex-col items-center justify-center px-6 text-center">
@@ -61,13 +71,28 @@ export default function Hero() {
         </motion.h1>
 
         <motion.p
-          className="mt-5 font-display text-lg italic text-cream/70 md:text-2xl"
+          className="mt-4 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-cream/60"
           initial={reduced ? false : { opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 1.4, ease: [0.22, 1, 0.36, 1] }}
         >
-          Italian Kitchen — {site.tagline.toLowerCase()}
+          Italian Kitchen
         </motion.p>
+
+        {/* House motto, carried over from the family's first place */}
+        <motion.figure
+          className="mt-10"
+          initial={reduced ? false : { opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 1.9, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <blockquote className="font-display text-2xl italic text-cream/85 md:text-4xl">
+            &ldquo;Love at first bite&rdquo;
+          </blockquote>
+          <figcaption className="mt-4 font-sans text-[0.65rem] uppercase tracking-[0.3em] text-brass">
+            — Rockafellas Clam Bar &amp; Grill
+          </figcaption>
+        </motion.figure>
       </div>
 
       {/* Scroll-down indicator */}

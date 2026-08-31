@@ -9,7 +9,10 @@ export default function Footer() {
             <p className="glass-text font-display text-3xl">
               Piccolino <span className="glass-text-olive italic">Italian Kitchen</span>
             </p>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-stone">
+            <p className="mt-3 font-sans text-[0.65rem] uppercase tracking-[0.28em] text-brass">
+              Serving the shore 35+ years
+            </p>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-stone">
               {site.address.street}, {site.address.city}, {site.address.state}{" "}
               {site.address.zip}
             </p>
