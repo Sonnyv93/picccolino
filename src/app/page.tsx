@@ -3,7 +3,6 @@ import OrderBar from "@/components/OrderBar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import MenuSection from "@/components/MenuSection";
-import Showreel from "@/components/Showreel";
 import Gallery from "@/components/Gallery";
 import Room from "@/components/Room";
 import Catering from "@/components/Catering";
@@ -17,7 +16,6 @@ export default function Home() {
       <Hero />
       <About />
       <MenuSection />
-      <Showreel />
       <Gallery />
       <Room />
       <Catering />

@@ -34,7 +34,7 @@ export default function Hero() {
     <section ref={sectionRef} id="top" className="relative h-[100svh] overflow-hidden">
       {/* ── Hero backdrop ────────────────────────────────────────────────
           The storefront at night, sitting behind the wordmark as a faint
-          watermark. The food video lives mid-page (see Showreel.tsx). */}
+          watermark behind the motto and the order buttons. */}
       <div ref={videoRef} className="absolute inset-0 -bottom-[22%]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_38%,#232a17_0%,#151a0e_45%,#0f110a_100%)]" />
         <Image
