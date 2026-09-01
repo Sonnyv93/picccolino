@@ -9,7 +9,7 @@ const photos = [
   { src: "/photos/cutouts/steak-shrimp-scampi.webp", alt: "NY strip steak topped with shrimp scampi, linguine aglio e olio, and broccoli rabe", caption: "Steak & Shrimp Scampi", sub: "Secondi", w: "w-[82vw] md:w-[40vw]" },
   { src: "/photos/cutouts/caprese.webp", alt: "Caprese salad — sliced tomato, fresh mozzarella, basil and balsamic glaze", caption: "Caprese", sub: "Insalate", w: "w-[72vw] md:w-[34vw]" },
   { src: "/photos/cutouts/carbonara.webp", alt: "Carbonara — spaghetti with pancetta, sweet peas and cream", caption: "Carbonara", sub: "Paste", w: "w-[72vw] md:w-[34vw]" },
-  { src: "/photos/cutouts/spicy-rigatoni-cutlet.webp", alt: "Spicy rigatoni in calabrian chili pecorino cream, topped with a sliced breaded chicken cutlet", caption: "Spicy Rigatoni with a Chicken Cutlet", sub: "Paste", w: "w-[82vw] md:w-[40vw]" },
+  { src: "/photos/cutouts/marechiara.webp", alt: "Marechiara — fish fillet in seafood sauce ringed with clams and mussels over linguine", caption: "Marechiara", sub: "Seafood Special", w: "w-[82vw] md:w-[40vw]" },
   { src: "/photos/cutouts/tripe-marinara.webp", alt: "Tripe marinara simmered in tomato sauce with fresh herbs", caption: "Tripe Marinara", sub: "Della Casa", w: "w-[82vw] md:w-[40vw]" },
   { src: "/photos/cutouts/eggplant-della-nonna.webp", alt: "Eggplant Della Nonna — breaded eggplant layered with fresh mozzarella, roasted red peppers and herbs over greens", caption: "Eggplant Della Nonna", sub: "Antipasti", w: "w-[82vw] md:w-[40vw]" },
 ];

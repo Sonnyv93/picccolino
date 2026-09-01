@@ -56,8 +56,8 @@ export default function About() {
           className="absolute inset-0 bg-[radial-gradient(circle_at_50%_58%,rgba(168,171,110,0.16),transparent_66%)]"
         />
         <Image
-          src="/photos/cutouts/red-snapper-shrimp.webp"
-          alt="Red snapper special over creamy rice with herb cream sauce and shrimp"
+          src="/photos/cutouts/eggplant-parm.webp"
+          alt="Eggplant parmigiana stacked tall under red sauce and melted mozzarella, over spaghetti"
           fill
           className="dish-cutout object-contain"
           sizes="(min-width: 768px) 45vw, 100vw"
