@@ -27,6 +27,14 @@ export const site = {
     },
   ],
 
+  // Reservations open by phone at 4:00 PM daily. Lunch is walk-in only —
+  // this is called out prominently in the Visit section and the footer.
+  reservations: {
+    callFrom: "4:00 PM",
+    line: "Reservations are taken by phone starting at 4:00 PM, every day.",
+    lunch: "Lunch is walk-in — no reservation needed.",
+  },
+
   address: {
     street: "1177 Fischer Blvd",
     city: "Toms River",

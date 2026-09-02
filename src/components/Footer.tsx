@@ -38,6 +38,12 @@ export default function Footer() {
                 {h.label}: {h.days}, {h.time}
               </p>
             ))}
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-brass">
+              Reservations by phone from {site.reservations.callFrom} daily.
+            </p>
+            <p className="mt-1 max-w-xs text-sm leading-relaxed text-stone">
+              {site.reservations.lunch}
+            </p>
           </div>
 
           <div>

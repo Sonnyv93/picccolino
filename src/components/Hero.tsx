@@ -110,6 +110,15 @@ export default function Hero() {
             </a>
           </Magnetic>
         </motion.div>
+
+        <motion.p
+          className="mt-6 font-sans text-[0.7rem] uppercase tracking-[0.22em] text-cream/70"
+          initial={reduced ? false : { opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.7 }}
+        >
+          Reservations by phone from {site.reservations.callFrom} · Lunch walk-in
+        </motion.p>
       </div>
 
       {/* Scroll-down indicator */}

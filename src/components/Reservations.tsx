@@ -53,6 +53,30 @@ export default function Reservations() {
             ))}
           </div>
 
+          {/* Reservations: phone only, and the line doesn't open until 4pm */}
+          <div className="resv-reveal rounded-[24px] border border-brass/50 bg-brass/[0.07] p-7 md:p-8">
+            <h3 className="eyebrow mb-4">Reservations</h3>
+            <p className="font-display text-2xl leading-snug text-cream md:text-3xl">
+              Call us from{" "}
+              <span className="glass-text-olive italic">
+                {site.reservations.callFrom}
+              </span>
+              , every day.
+            </p>
+            <Magnetic>
+              <a
+                href={site.phoneHref}
+                className="mt-6 inline-block bg-brass px-8 py-4 font-display text-2xl text-ink transition-colors duration-300 hover:bg-cream"
+              >
+                {site.phone}
+              </a>
+            </Magnetic>
+            <p className="mt-5 border-t border-brass/25 pt-4 text-sm leading-relaxed text-stone">
+              <span className="text-cream">{site.reservations.lunch}</span>{" "}
+              Come on in — we&rsquo;ll find you a table.
+            </p>
+          </div>
+
           <div className="resv-reveal">
             <h3 className="eyebrow mb-5">Order takeout</h3>
             <Magnetic>
@@ -88,18 +112,6 @@ export default function Reservations() {
               ))}
               .
             </p>
-          </div>
-
-          <div className="resv-reveal">
-            <h3 className="eyebrow mb-5">Call for reservations</h3>
-            <Magnetic>
-              <a
-                href={site.phoneHref}
-                className="inline-block border border-brass/50 px-8 py-4 font-display text-2xl text-cream transition-colors duration-300 hover:bg-brass hover:text-ink"
-              >
-                {site.phone}
-              </a>
-            </Magnetic>
           </div>
 
           <div className="resv-reveal">
