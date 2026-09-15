@@ -10,6 +10,7 @@ const links = [
   { href: "#room", label: "The Place" },
   { href: "#catering", label: "Catering" },
   { href: "#reservations", label: "Visit" },
+  { href: "#holidays", label: "Holidays" },
 ];
 
 export default function Nav() {

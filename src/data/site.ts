@@ -35,6 +35,12 @@ export const site = {
     lunch: "Lunch is walk-in — no reservation needed.",
   },
 
+  // Holiday / special hours change often — the site points people at the
+  // phone and the socials rather than trying to keep a list up to date.
+  holidays: {
+    line: "Holiday hours change every year — call us or check our socials before you head over.",
+  },
+
   address: {
     street: "1177 Fischer Blvd",
     city: "Toms River",

@@ -7,6 +7,7 @@ import Gallery from "@/components/Gallery";
 import Kitchen from "@/components/Kitchen";
 import Room from "@/components/Room";
 import Catering from "@/components/Catering";
+import Holidays from "@/components/Holidays";
 import Reservations from "@/components/Reservations";
 import Footer from "@/components/Footer";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Room />
       <Catering />
       <Reservations />
+      <Holidays />
       <Footer />
       <OrderBar />
     </main>
