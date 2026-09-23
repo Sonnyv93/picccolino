@@ -55,7 +55,7 @@ export const site = {
     "https://www.google.com/maps/search/?api=1&query=1177+Fischer+Blvd,+Toms+River,+NJ+08753",
 
   hours: [
-    { days: "Monday – Friday", label: "Lunch", time: "12:00 PM – 3:00 PM" },
+    { days: "Monday – Friday", label: "Lunch", time: "12:30 PM – 3:00 PM" },
     { days: "Monday – Friday", label: "Dinner", time: "5:00 PM – 9:00 PM" },
     { days: "Saturday", label: "Dinner", time: "4:30 PM – 9:00 PM" },
     { days: "Sunday", label: "Closed", time: "—" },

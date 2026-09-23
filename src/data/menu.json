@@ -4,7 +4,7 @@
       "id": "lunch-apps",
       "name": "Lunch · Appetizers",
       "subtitle": "Antipasti",
-      "note": "Monday – Friday · 12:00 – 3:00",
+      "note": "Monday – Friday · 12:30 – 3:00",
       "items": [
         {
           "name": "Fried Ravioli",
@@ -50,7 +50,7 @@
       "id": "lunch-salads-pastas",
       "name": "Lunch · Salads & Pastas",
       "subtitle": "Insalate & Paste",
-      "note": "Monday – Friday · 12:00 – 3:00",
+      "note": "Monday – Friday · 12:30 – 3:00",
       "items": [
         {
           "name": "Signature House Salad",
@@ -84,7 +84,7 @@
       "id": "lunch-specialties",
       "name": "Lunch · Specialties",
       "subtitle": "Specialità",
-      "note": "Monday – Friday · 12:00 – 3:00",
+      "note": "Monday – Friday · 12:30 – 3:00",
       "items": [
         {
           "name": "Eggplant Rollentine",
