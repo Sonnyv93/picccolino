@@ -12,7 +12,7 @@
         },
         {
           "name": "Calamari Salad",
-          "price": "18"
+          "price": "22"
         },
         {
           "name": "NY Fried Shrimp",
@@ -24,7 +24,7 @@
         },
         {
           "name": "Della Nonna",
-          "price": "18"
+          "price": "20"
         },
         {
           "name": "Fried Zucchini",
@@ -36,12 +36,12 @@
         },
         {
           "name": "Mussels Red or White",
-          "price": "18"
+          "price": "22"
         },
         {
           "name": "Soup of the Day",
           "description": "cup / bowl",
-          "price": "5 / 9"
+          "price": "6 / 9"
         }
       ],
       "short": "Lunch Apps"
@@ -58,15 +58,15 @@
         },
         {
           "name": "Caesar Salad",
-          "price": "8 / 15"
+          "price": "9 / 16"
         },
         {
           "name": "Chopped Antipasta Salad",
-          "price": "10 / 16"
+          "price": "12 / 18"
         },
         {
           "name": "Caprese Salad",
-          "price": "9 / 16"
+          "price": "10 / 16"
         },
         {
           "name": "Add to any salad",
@@ -75,7 +75,7 @@
         {
           "name": "House Pasta",
           "description": "your choice of pomodoro, vodka, pesto, bolognese, or garlic & oil",
-          "price": "13"
+          "price": "16"
         }
       ],
       "short": "Salads & Pastas"
@@ -92,7 +92,7 @@
         },
         {
           "name": "Stuffed Portobello",
-          "price": "18"
+          "price": "20"
         },
         {
           "name": "Stuffed Artichoke",
@@ -104,7 +104,7 @@
         },
         {
           "name": "Escarole, Sausage & Beans",
-          "price": "16"
+          "price": "18"
         },
         {
           "name": "Chicken Cutlet Bruschetta",
@@ -112,7 +112,7 @@
         },
         {
           "name": "Chicken Cacciatore",
-          "price": "20"
+          "price": "22"
         },
         {
           "name": "Grilled Salmon Picatta",
@@ -120,12 +120,12 @@
         },
         {
           "name": "Shrimp Scampi Crostini",
-          "price": "20"
+          "price": "24"
         },
         {
           "name": "Chicken Prosciutto & Provolone",
           "description": "roasted red peppers, balsamic, roast potatoes",
-          "price": "20"
+          "price": "24"
         }
       ],
       "short": "Specialties"
@@ -142,7 +142,7 @@
         },
         {
           "name": "Fried Calamari",
-          "price": "20"
+          "price": "22"
         },
         {
           "name": "Clams Oreganata",
@@ -159,15 +159,15 @@
         },
         {
           "name": "Broccoli Rabe & Sausage",
-          "price": "20"
+          "price": "22"
         },
         {
           "name": "Mussels Fra Diavolo",
-          "price": "20"
+          "price": "22"
         },
         {
           "name": "Meatballs Parmigiana",
-          "price": "12"
+          "price": "13"
         },
         {
           "name": "Fried Ravioli",
@@ -175,7 +175,7 @@
         },
         {
           "name": "Caesar Salad",
-          "price": "15"
+          "price": "16"
         },
         {
           "name": "Bocconcini Salad",
@@ -193,7 +193,7 @@
         {
           "name": "Rigatoni Mushroom",
           "description": "sweet sausage, tomato, basil",
-          "price": "28"
+          "price": "30"
         },
         {
           "name": "Spicy Rigatoni",
@@ -203,22 +203,22 @@
         {
           "name": "Fettuccine Bolognese",
           "description": "traditional meat ragù, whipped ricotta",
-          "price": "29"
+          "price": "31"
         },
         {
           "name": "Penne Vodka",
           "description": "sweet onion, tomato, pecorino cream",
-          "price": "26"
+          "price": "27"
         },
         {
           "name": "Linguine Pesto",
           "description": "basil, toasted pine nuts, pecorino cream",
-          "price": "26"
+          "price": "27"
         },
         {
           "name": "Linguine Gemma",
           "description": "shrimp, peas, pink fennel cream",
-          "price": "31"
+          "price": "32"
         },
         {
           "name": "Linguine Clam Sauce",
@@ -226,7 +226,7 @@
         },
         {
           "name": "Bucatini Carbonara",
-          "price": "29"
+          "price": "30"
         },
         {
           "name": "Cavatelli & Broccoli",
@@ -245,7 +245,7 @@
         {
           "name": "Chicken Parmigiana",
           "description": "served with pasta",
-          "price": "27"
+          "price": "28"
         },
         {
           "name": "Chicken Saltimbocca",
@@ -255,17 +255,17 @@
         {
           "name": "Chicken Française",
           "description": "egg batter, lemon white wine",
-          "price": "27"
+          "price": "28"
         },
         {
           "name": "Chicken Murphy",
           "description": "peppers, sausage, mushrooms, onion, roasted potato",
-          "price": "29"
+          "price": "30"
         },
         {
           "name": "Steak Marsala",
           "description": "roasted potatoes, broccoli",
-          "price": "44"
+          "price": "46"
         },
         {
           "name": "Shrimp Parmigiana",
@@ -280,12 +280,12 @@
         {
           "name": "Grilled Wild-Caught Salmon",
           "description": "arugula, roasted cherry tomatoes, potatoes",
-          "price": "38"
+          "price": "40"
         },
         {
           "name": "Salmon Oreganata",
           "description": "sautéed spinach, linguine garlic & oil",
-          "price": "40"
+          "price": "42"
         }
       ],
       "short": "Dinner Entrées"

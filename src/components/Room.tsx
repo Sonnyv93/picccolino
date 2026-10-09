@@ -37,6 +37,30 @@ const scenes = [
     caption: "Dolci at the door",
     span: "md:col-span-5 md:mt-20",
   },
+  {
+    src: "/photos/room/party-setup.webp",
+    alt: "The dining room set for a private party, sunflowers and wine on every table",
+    caption: "Set for a private party",
+    span: "md:col-span-7",
+  },
+  {
+    src: "/photos/room/party-group.webp",
+    alt: "Guests raising a glass around a long table at Piccolino",
+    caption: "Salute",
+    span: "md:col-span-5 md:mt-16",
+  },
+  {
+    src: "/photos/room/water-service.webp",
+    alt: "San Pellegrino and Acqua Panna on the table with a Piccolino card",
+    caption: "Still or sparkling",
+    span: "md:col-span-4",
+  },
+  {
+    src: "/photos/room/sauce-pot.webp",
+    alt: "A full pot of tomato sauce simmering on the kitchen range",
+    caption: "The sauce, every morning",
+    span: "md:col-span-8 md:mt-12",
+  },
 ];
 
 export default function Room() {
